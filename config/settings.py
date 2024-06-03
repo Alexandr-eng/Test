@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     "app.news",
     "app.comments",
     "app.likes",
-    'itfox',
+    'config',
 ]
 
 AUTH_USER_MODEL = "user.User"
@@ -72,7 +72,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "itfox.urls"
+ROOT_URLCONF = "config.urls"
 
 TEMPLATES = [
     {
@@ -90,7 +90,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "itfox.wsgi.application"
+WSGI_APPLICATION = "config.wsgi.application"
 
 
 # Database
