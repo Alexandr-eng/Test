@@ -72,17 +72,17 @@ ___
 
 - Создать файл .env.dev:
 - 
-'''
+```
 DEBUG=0
 SECRET_KEY=secret_key
 DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
-POSTGRES_DB=имя_твоей_бд
+POSTGRES_DB=meetmap
 POSTGRES_ENGINE=django.db.backends.postgresql
-POSTGRES_USER=имя_твоего_пользователя
-POSTGRES_PASSWORD=пароль_бд
+POSTGRES_USER=root
+POSTGRES_PASSWORD=123123
 POSTGRES_HOST=db
 POSTGRES_PORT=5432
-'''
+```
 
 - В консоли выролните команду:
 
