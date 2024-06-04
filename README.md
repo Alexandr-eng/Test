@@ -1,10 +1,8 @@
-><h5> Stack:</h5>DRF<br>pyjwt<br>drf-yasg<br>gunicorn<br>django-cors-headers<br>psycopg2<br>
 
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-Тестовое задание на должность Python Backend Developer
+Тестовое задание на должность Python Backend Developer:
 
-<H3>Описание</H3>
+
 
 Тестовое задание предполагает создание сервера авторизации и новостей с комментариями и лайками на Django с использованием Django Rest Framework.
 
@@ -40,23 +38,19 @@
 
 ---
 
-<h5>Модели:</h5> Users, News, Comments.
 
-<h5>Роуты:</h5> 
-
-![image](https://github.com/NovaCript/ItFox_TPB/assets/114811823/c767185f-bb0d-48c3-a83f-b59c3df78a05)
 
 
   
 ---
 
-<h2>Установка и запуск (Локально)</h2>
+Установка и запуск (Локально)
 
 - Клонировать репозиторий:
->git clone https://github.com/NovaCript/ItFox_TPB.git
+>git clone https://github.com/Alexandr-eng/Test.git
 
 - Перейти в директорию проекта:
->cd ItFox_TPB
+>cd Test
 
 - Установить зависимости:
 >pip install -r requirements.txt
@@ -68,13 +62,13 @@
 >python manage.py runserver
 ___
 
-<h2>Сборка Docker образа</h2>
+Сборка Docker образа
 
 - Клонировать репозиторий:
->git clone https://github.com/NovaCript/ItFox_TPB.git
+>git clone https://github.com/Alexandr-eng/Test.git
 
 - Перейти в директорию проекта:
->cd ItFox_TPB
+>cd Test
 
 - Создать файл .env.dev:
 
@@ -91,32 +85,30 @@ POSTGRES_PORT=5432
 ```
 - В консоли выролните команду:
 
-В будущем для запуска проекта --build можно не писать
+В будущем для запуска проекта, при первом запуске. Далее контейнр будет собран и --build не пишем
 >docker-compose up --build
 
 - Откройте новую консоль, введите команду:
 >docker ps
 
 - Зайдите в контейнер с проектом Django:
->docker exec -it ItFox_TPB_web bash
+>docker exec -it ItFox_web bash
 
-- Выполните ряд команд:
-```
+- Выполните команды:
+
 python manage.py collectstatic
 python manage.py createsuperuser
-```
+
 
 ___
 
-<h2>API</h2>
-<h5>Для получения подробной информации о доступных API-endpoint и их
+API
+Для получения подробной информации о доступных API-endpoint и их
 использовании, пожалуйста, обратитесь к Swagger документации.</h5>
 
->Локально http://127.0.0.1:8000/api/v1/swagger/
+Локально http://127.0.0.1:8000/api/swagger/
 
->Docker http://localhost/api/v1/swagger/
+Docker http://localhost/api/swagger/
 
 
-<h1>Хорошего дня! 
-<img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" 
-height="32"/></h1>
+
