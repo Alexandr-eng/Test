@@ -3,7 +3,7 @@ version: '3.7'
 services:
   web:
     build: ./
-    container_name: ItFox_TPB_web
+    container_name: ItFox_web
     restart: always
     command: bash entrypoint.sh
     volumes:
@@ -39,5 +39,5 @@ services:
       - web
 
 volumes:
-  ItFox_TPB_postgers_data:
+  ItFox_postgers_data:
 
