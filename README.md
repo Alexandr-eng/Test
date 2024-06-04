@@ -71,8 +71,8 @@ ___
 >cd Test
 
 - Создать файл .env.dev:
-
-
+- 
+'''
 DEBUG=0
 SECRET_KEY=secret_key
 DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
@@ -82,6 +82,7 @@ POSTGRES_USER=имя_твоего_пользователя
 POSTGRES_PASSWORD=пароль_бд
 POSTGRES_HOST=db
 POSTGRES_PORT=5432
+'''
 
 - В консоли выролните команду:
 
