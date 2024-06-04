@@ -2,7 +2,7 @@ from django.contrib.auth.base_user import BaseUserManager
 
 
 class CustomManager(BaseUserManager):
-    def create_user(self, password, username, **extra_fields):
+    def _create_user(self, password, username, **extra_fields):
         if not password:
             raise ValueError("Password is not provided")
 
